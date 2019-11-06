@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>countdown</title>
+</head>
+
+<body>
+    <p id="result" style="font: size 1em;"></p>
+    <p id="result2" style="color:blue"></p>
+     <p id="result3" style="color:red"></p>
+    <script>
+        var countdown = 1;
+        var countthree= 1;
+
+        while (countdown <= 100) {
+            //    alert(countdown) 
+            document.getElementById('result').innerHTML += countdown;
+            document.getElementById('result').innerHTML += "<br>";
+           ;
+            
+           
+
+            //    setTimeout(countdown, 3000)
+            countdown++;
+        }
+
+while (countdown <=50) {
+    document.getElementById('result3').innerHTML += countdown;
+            document.getElementById('result3').innerHTML += "&nbsp;";
+   countdown++;
+}
+
+
+        // else
+        // {
+        //     alert("Keep on working!")
+        // }
+    </script>
+
+</body>
+
+</html>
