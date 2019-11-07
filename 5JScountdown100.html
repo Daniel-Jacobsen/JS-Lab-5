@@ -11,27 +11,16 @@
 <body>
     <p id="result" style="font: size 1em;"></p>
     <script>
+        var i;
 
-        for (var i = 1; i <= 100; i++){ 
+        for (i = 1; i < 101; i++){ 
             if (i % 3 == 0){
-                document.getElementById('result').innerHTML = "Fizz, ";
+                document.getElementById('result').innerHTML += "Fizz" + "<br>";
             }else{
-                document.getElementById('result').innerHTML += i + ", ";
+                document.getElementById('result').innerHTML += i + "<br>";
             }
         }
-       /* var count = 1;
-
-        while (count <= 100) {
-            //    alert(countdown)
-            if (count % 3 == 0) {
-                document.getElementById('result').innerHTML = "Fizz"
-            } else{
-                document.getElementById('result').innerHTML += count;
-            document.getElementById('result').innerHTML += "<br>";
-            }
-               
-            count++;
-        }*/
+       
     </script>
 
 </body>
