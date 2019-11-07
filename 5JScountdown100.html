@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <p>conflict</p>
+   
     <p id="result" style="font: size 1em;"></p>
     <script>
         for (let i = 1; i < 101; i++) {
@@ -19,7 +19,10 @@
                 document.getElementById('result').innerHTML += "Fizz" + "<br>";
             } else if (i % 5 == 0) {
                 document.getElementById('result').innerHTML += "Buzz" + "<br>";
-            } else {
+            } else if (i % 7 == 0) {
+                document.getElementById('result').innerHTML += "Fuzz" + "<br>";
+            } 
+            else {
                 document.getElementById('result').innerHTML += i + "<br>";
             }
         }
