@@ -9,37 +9,29 @@
 </head>
 
 <body>
-    <p id="result" style="font: size 1em;">
-    </p>
-    <p id="result2" style="color:blue"></p>
-     <p id="result3" style="color:red"></p>
+    <p id="result" style="font: size 1em;"></p>
     <script>
-        var countdown = 1;
-        var countthree= 1;
 
-        while (countdown <= 100) {
-            //    alert(countdown) 
-            document.getElementById('result').innerHTML += countdown;
-            document.getElementById('result').innerHTML += "<br>";
-           ;
-            
-           
-
-            //    setTimeout(countdown, 3000)
-            countdown++;
+        for (var i = 1; i <= 100; i++){ 
+            if (i % 3 == 0){
+                document.getElementById('result').innerHTML = "Fizz, ";
+            }else{
+                document.getElementById('result').innerHTML += i + ", ";
+            }
         }
+       /* var count = 1;
 
-while (countdown <=50) {
-    document.getElementById('result3').innerHTML += countdown;
-            document.getElementById('result3').innerHTML += "&nbsp;";
-   countdown++;
-}
-
-
-        // else
-        // {
-        //     alert("Keep on working!")
-        // }
+        while (count <= 100) {
+            //    alert(countdown)
+            if (count % 3 == 0) {
+                document.getElementById('result').innerHTML = "Fizz"
+            } else{
+                document.getElementById('result').innerHTML += count;
+            document.getElementById('result').innerHTML += "<br>";
+            }
+               
+            count++;
+        }*/
     </script>
 
 </body>
